@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "description": "State management tools.",
   "scripts": {
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish",
     "test": "jest --passWithNoTests --config jest.config.ts",
     "eslint": "eslint --no-eslintrc -c .eslintrc.json --fix '**/src/*.{js,jsx,ts,tsx}'",
-    "eslint:ci": "eslint --no-eslintrc -c .eslintrc.json --fix '**/src/*.{js,jsx,ts,tsx}'",
-    "prettier": "prettier '**/{examples,src,__tests__,website}/**/*.{js,jsx,ts,tsx,md}'",
+    "eslint:ci": "eslint --no-eslintrc -c .eslintrc.json '**/src/*.{js,jsx,ts,tsx}'",
+    "prettier": "prettier '**/{examples,src,__tests__,website}/**/*.{js,jsx,ts,tsx,md} --write'",
     "prettier:ci": "prettier '**/{examples,src,__tests__,website}/**/*.{js,jsx,ts,tsx,md}' --list-different",
     "typecheck": "pnpm -r --parallel run typecheck",
     "build": "concurrently 'pnpm:build:*",
@@ -15,7 +18,7 @@
     "build:valtio": "rollup -c --package valtio",
     "build:react-query": "rollup -c --package react-query"
   },
-  "keywords": [],
+  "keywords": ["state", "management", "tool"],
   "author": "",
   "license": "MIT",
   "prettier": {
