@@ -1,0 +1,20 @@
+.ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  margin-bottom: 16px;
+
+  animation: moveLeftRight 4s infinite;
+}
+
+@keyframes moveLeftRight {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 200px;
+  }
+}
