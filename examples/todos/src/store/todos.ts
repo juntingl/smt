@@ -1,4 +1,4 @@
-import { create } from 'zustand';
+import { create } from '../../../../packages/zustand/src';
 
 type FilterType = 'all' | 'completed' | 'incompleted'
 

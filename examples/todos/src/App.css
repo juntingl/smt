@@ -77,3 +77,13 @@ h1 {
   color: black;
   white-space: nowrap;
 }
+
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.basis-50 {
+  flex-basis: 50%;
+}

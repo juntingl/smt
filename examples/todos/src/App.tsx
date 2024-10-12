@@ -3,6 +3,7 @@ import './App.css';
 import Filter from './components/Filter';
 import Filtered from './components/Filtered';
 import { useStore } from './store/todos';
+import Fetch from './pages/fetch';
 
 let keyCount = 0;
 
@@ -18,11 +19,14 @@ function App() {
   }
 
   return (
-    <form onSubmit={add}>
-      <Filter />
-      <input type="text" name="inputTitle" placeholder='please input todo......' />
-      <Filtered />
-    </form>
+    <>
+      <form onSubmit={add} className='basic-50'>
+        <Filter />
+        <input type="text" name="inputTitle" placeholder='please input todo......' />
+        <Filtered />
+      </form>
+      {/* <Fetch /> */}
+    </>
   )
 }
 
